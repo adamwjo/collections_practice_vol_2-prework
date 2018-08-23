@@ -45,9 +45,25 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-  counts = Hash.new 0
-  array.each do |word|
-    counts[word] += 1
-  end
-  counts
+  array.each do |original_hash|
+    original_hash[:count] = 0
+    name = original_hash[:name]
+    array.each do |new_hash|
+      if new_hash[:name] == name
+        original_hash[:count] += 1
+      end
+    end
+  end.uniq
+end
+
+def merge_data(keys, data)
+  
+end
+
+def find_cool(cool)
+  
+end
+
+def organize_schools(schools)
+  
 end
