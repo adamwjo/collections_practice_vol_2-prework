@@ -6,6 +6,7 @@ def begins_with_r(array)
     else
       if item[0] == "r"
         return true
+      end
     end
   end
 end
