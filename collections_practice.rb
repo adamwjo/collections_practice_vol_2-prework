@@ -14,3 +14,13 @@ def begins_with_r(array)
     end
   end
 end
+
+def contain_a(array)
+  new_array = []
+  array.each do |item|
+    if item.include?("a")
+      new_array.push(item)
+    end
+  end
+  new_array
+end
