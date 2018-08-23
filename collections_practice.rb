@@ -49,4 +49,5 @@ def count_elements(array)
   array.each do |word|
     counts[word] += 1
   end
+  counts
 end
