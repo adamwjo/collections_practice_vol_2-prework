@@ -33,3 +33,11 @@ def first_wa(array)
     end
   end
 end
+
+def remove_non_strings(array)
+  array.each do |item|
+    if item.is_a? String
+      item.delete
+    end
+  end  
+end
