@@ -10,6 +10,7 @@ def begins_with_r(array)
       end
       if counter == array.length
         return true
+      end
     end
   end
 end
