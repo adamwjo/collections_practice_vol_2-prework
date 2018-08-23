@@ -27,7 +27,8 @@ end
 
 def first_wa(array)
   array.each do |item|
-    if item.start_with?('wa')
+    item.to_s
+    if item.start_with?("wa")
       return item
     end
   end
