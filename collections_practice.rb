@@ -24,3 +24,11 @@ def contain_a(array)
   end
   new_array
 end
+
+def first_wa(array)
+  array.each do |item|
+    if item.start_with?('wa')
+      return item
+    end
+  end
+end
